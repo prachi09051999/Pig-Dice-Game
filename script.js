@@ -67,7 +67,7 @@ const showCurrentScore = (randomNumber,currentScore) => {
 
 const roleDice = () => {
   const randomNumber = Math.trunc(Math.random()*6)+1;
-  dice.src = dice.src.replace(dice.src.substring(22,28),`dice-${randomNumber}`);
+  dice.src = `dice-${randomNumber}.png`;
   if(dice.classList.contains('hidden')){
     dice.classList.remove('hidden');
   }
